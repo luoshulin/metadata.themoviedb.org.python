@@ -11,7 +11,10 @@
              library="python/scraper.py"/>
   <extension point="xbmc.addon.metadata">
     <reuselanguageinvoker>true</reuselanguageinvoker>
-    <news>v1.6.2 (2022-04-10)
+    <news>v1.6.4 (2022-06-15)
+        - Change: update xbmc.python version to 3.0.0
+
+        v1.6.2 (2022-04-10)
 - Fix: IMDB ratings
 
 v1.6.0 (2021-12-24) - v1.6.1 (2022-01-09)
