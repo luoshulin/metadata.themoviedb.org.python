@@ -27,6 +27,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ${{ steps.kodi-addon-submitter.outputs.addon-zip }}
-        asset_name: ${{ steps.kodi-addon-submitter.outputs.addon-zip }}
+        asset_path: ${{ steps.create_release.outputs.addon-zip }}
+        asset_name: ${{ steps.create_release.outputs.addon-zip }}
         asset_content_type: application/zip
