@@ -10,20 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Kodi addon submitter
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-    - name: Generate distribution zip and submit to official kodi repository
-      id: kodi-addon-submitter
-      uses: xbmc/action-kodi-addon-submitter@v1.2
-      with:
-        kodi-repository: repo-scrapers
-        kodi-version: leia
-        addon-id: metadata.themoviedb.org.python
-        kodi-matrix: true
-      env:
-        GH_USERNAME: ${{ github.actor }}
-        GH_TOKEN: ${{secrets.GH_TOKEN}}
-        EMAIL: ${{secrets.EMAIL}}
     - name: Create Github Release
       id: create_release
       uses: actions/create-release@v1.0.0
